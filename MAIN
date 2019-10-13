@@ -1,0 +1,21 @@
+#include <iostream>
+#include "Pagamento.cpp"
+#include "ControleDePagamentos.cpp"
+
+using namespace std;
+
+int main(void)
+{
+
+    int i = 0;
+
+    ControleDePagamentos total[100];
+
+    total[i].addPagamento(980.2, "Alisson");
+    total[i].addPagamento(150.3, "Maritan");
+
+    cout << total[i].calculaTotalDePagamentos() << endl;
+
+    system("pause");
+    return 0;
+}
